@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "display": "Base",
+  "compilerOptions": {
+    "lib": ["es2022"],
+    "target": "es2022",
+    "strict": true,
+    "module": "node16",
+    "moduleResolution": "node16",
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "declaration": true,
+    "noUnusedLocals": true,
+    "noImplicitThis": true,
+    "removeComments": true,
+    "stripInternal": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "useDefineForClassFields": true,
+    "resolveJsonModule": true
+  }
+}

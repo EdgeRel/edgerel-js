@@ -1,0 +1,43 @@
+{
+  "name": "@edgedb/create",
+  "version": "0.2.2",
+  "type": "module",
+  "description": "Create a new EdgeDB-based project",
+  "homepage": "https://edgedb.com/docs",
+  "author": "EdgeDB <info@edgedb.com>",
+  "engines": {
+    "node": ">= 18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edgedb/edgedb-js.git"
+  },
+  "license": "Apache-2.0",
+  "sideEffects": false,
+  "files": [
+    "/dist"
+  ],
+  "bin": "dist/cli.js",
+  "peerDependencies": {},
+  "devDependencies": {
+    "@types/debug": "^4.1.12",
+    "@types/node": "^20.12.13",
+    "tsx": "^4.11.0",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "@clack/prompts": "^0.7.0",
+    "debug": "^4.3.4",
+    "picocolors": "^1.0.1",
+    "read-pkg": "^9.0.1",
+    "write-package": "^7.0.1"
+  },
+  "scripts": {
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "create": "tsx src/cli.ts",
+    "build": "./build.sh",
+    "test": "tsc --noEmit",
+    "lint": "eslint --quiet",
+    "lint:fix": "eslint --fix"
+  }
+}
